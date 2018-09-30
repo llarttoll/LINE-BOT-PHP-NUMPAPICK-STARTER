@@ -34,5 +34,5 @@ $Topic = "NodeMCU1" ;
 $text = "Test";
 getMqttfromlineMsg($Topic,$text);
 echo "OK3";
-send_LINE($text);
+send_LINE($events);
 ?>
