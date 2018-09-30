@@ -26,6 +26,10 @@ function send_LINE($msg){
       curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
       curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+      $proxy = 'velodrome.usefixie.com:80';
+      $proxyauth = 'fixie:sCOlYQgVj69AFz2';
+      curl_setopt($ch, CURLOPT_PROXY, $proxy);
+      curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
       $result = curl_exec($ch);
       curl_close($ch);
 
