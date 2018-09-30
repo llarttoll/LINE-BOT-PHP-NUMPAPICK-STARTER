@@ -34,5 +34,4 @@ $Topic = "NodeMCU1" ;
 $text = "Test";
 getMqttfromlineMsg($Topic,$text);
 echo "OK3";
-send_LINE("ควย");
 ?>
