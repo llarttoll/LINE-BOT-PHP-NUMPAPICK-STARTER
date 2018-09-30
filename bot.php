@@ -33,5 +33,6 @@ if (!is_null($events['events'])) {
 $Topic = "NodeMCU1" ;
 $text = "Test";
 getMqttfromlineMsg($Topic,$text);
-echo "OK3 ".$_SERVER['SERVER_ADDR'];
+echo "OK3";
+send_LINE($text);
 ?>
